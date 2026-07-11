@@ -31,13 +31,13 @@ By simulating an active brute-force threat (Event ID 4625), raw telemetry data b
 1. Accessed the target endpoint machine and initialized verification diagnostics across local infrastructure services.
 2. Verified the active deployment status of the Wazuh endpoint daemon listener natively inside the system command prompt terminal to ensure persistent log capture channels remained active and error-free.
 
-### Phase 2: Agent Telemetry Registration & Baseline Mapping
-1. Established a secure link handshake connection between the remote target asset node and the centralized SIEM manager dashboard.
-2. Verified the telemetry status grid inside the main web management canvas console to confirm that the endpoint node was registered, actively checking in, and successfully streaming real-time event pipeline logs.
-
-### Phase 3: Simulated Adversary Threat Execution (Brute Force)
+### Phase 2: Simulated Adversary Threat Execution (Brute Force)
 1. Simulated an active credential-stuffing / brute-force attack path sequence directly on the target machine endpoint interface gateway.
 2. Intentionally triggered multiple failed authentication attempts to force the Windows security logging subsystem to generate explicit system failure logs.
+
+### Phase 3: Agent Telemetry Registration & Baseline Mapping
+1. Established a secure link handshake connection between the remote target asset node and the centralized SIEM manager dashboard.
+2. Verified the telemetry status grid inside the main web management canvas console to confirm that the endpoint node was registered, actively checking in, and successfully streaming real-time event pipeline logs.
 
 ### Phase 4: Real-Time Event Triage & Log Volume Analysis
 1. Monitored the central SIEM manager analytics engine console dashboard framework view.
