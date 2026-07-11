@@ -56,14 +56,14 @@ By simulating an active brute-force threat (Event ID 4625), raw telemetry data b
   ![Active Endpoint Telemetry Status Dashboard](01-active-endpoint-agent.png)  
   *Displays the central Wazuh web interface confirming a healthy, active endpoint telemetry stream. The dashboard displays the registration status of client node '002' (Windows-10-Client) reporting from IP address 192.168.154.135 running Microsoft Windows 10 Pro, verifying a successful connection baseline.*
 
-* **02. Adversary Authentication Threat Simulation Gateway:**  
-  ![Failed Logon Authentication Prompt](02-failed-logon-simulation.png)  
-  *Displays the execution phase of the simulated threat deployment track inside the target virtual environment. By deliberately keying a custom password test string ('BruteForceAttack123') against user account 'Test Dummy' on the Windows 10 Pro client node login lock interface, a controlled validation failure sequence was generated to test localized alert triggers.*
+* **02. Local Endpoint Agent Service Integrity Verification:**
+  ![Failed Logon Authentication Prompt](02-wazuh-service-running.png)  
+ *Displays local diagnostic checks executing within an administrative Windows Command Prompt on the client node. Utilizing an isolated PowerShell query (`Get-Service Name *wazuh*`), the console command verifies the active, persistent runtime integrity status of 'WazuhSvc' as 'Running', confirming that the background event-forwarding engine is actively capturing host telemetry loops.*
 
-* **03. Local Endpoint Agent Service Integrity Verification:**  
-  ![Wazuh Daemon Listening Status](03-wazuh-service-running.png)  
-  *Displays local diagnostic checks executing within an administrative Windows Command Prompt on the client node. Utilizing an isolated PowerShell query (`Get-Service Name *wazuh*`), the console command verifies the active, persistent runtime integrity status of 'WazuhSvc' as 'Running', confirming that the background event-forwarding engine is actively capturing host telemetry loops.*
-
+ * **03. Adversary Authentication Threat Simulation Gateway:**     
+  ![Wazuh Daemon Listening Status](03-failed-logon-simulation.png)
+ *Displays the execution phase of the simulated threat deployment track inside the target virtual environment. By deliberately keying a custom password test string ('BruteForceAttack123') against user account 'Test Dummy' on the Windows 10 Pro client node login lock interface, a controlled validation failure sequence was generated to test localized alert triggers.*  
+  
 * **04. SIEM Incident Volume Alert Detection & Metric Ingestion:**  
   ![Wazuh Real Time Threat Detection Alert Spike Chart](04-siem-alert-spike.png)  
   *Displays the security event telemetry dashboards inside the central SIEM manager analytics engine. The real-time metric histogram flags an immediate timeline volume anomaly spike running up across the security tracking charts, visualizing the precise ingestion point where multiple host authentication events were captured simultaneously over the wire.*
