@@ -2,8 +2,19 @@
 
 ## 📊 Infrastructure & Telemetry Classification
 * **Domain Focus:** Security Operations Center (SOC) Operations & Blue Team Defenses
-* **Technology Stack:** Wazuh SIEM/XDR Dashboard Console, Windows Enterprise Node, Linux Bash CLI
 * **Core Competencies:** Threat Monitoring, Security Event Log Triage, Adversary Attack Simulation
+
+
+### 🖥️ Enterprise Lab Environment Architecture
+* **Central SIEM Orchestrator:** 
+  * **Platform:** Wazuh OVA Distributed Virtual Machine Node (Pre-configured SIEM Server Architecture)
+  * **Role:** Aggregates, indexes, and visualizes security event logs streamed across endpoint channels.
+* **Domain Infrastructure Controller:** 
+  * **Platform:** Windows Server 2019 (Enterprise Systems Directory Infrastructure)
+  * **Role:** Manages centralized directory resources, security policies, and enterprise domain state logging.
+* **Target Security Endpoint Node:** 
+  * **Platform:** Windows 10 Pro (x64 Workstation Client Node)
+  * **Role:** Monitored corporate workstation generating localized user authentication events (Event ID 4625).
 
 ---
 
