@@ -1,0 +1,1 @@
+# wazuh-siem-soc-monitoring
